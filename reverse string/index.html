@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVERSE SRTING</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <h1>Reverse String</h1>
+            <input type="text" id="str" placeholder="Enter a string">
+            <button id="output" onclick="submit()">submit</button>
+            <p id="result"></p>
+        </div> 
+    </div>
+    <script>
+        function submit() {
+            var input = document.getElementById("str").value;
+            var Reverse = input.split('').reverse().join('');
+            document.getElementById("result").innerHTML = "Reverse String:"+ Reverse;
+        }  
+    </script>
+</body>
+</html>

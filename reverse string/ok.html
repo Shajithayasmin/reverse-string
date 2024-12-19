@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVERSE STRING</title>
+</head>
+<style>
+    body {
+        background-color: #f2f2f2;
+    }
+    .item{
+        height: 150px;
+        width: 20%;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        position: absolute;
+        left: 40%;
+        top: 35%;
+    }
+    button{
+        background-color: blanchedalmond;
+        border: 1px solid ;
+        padding: 5px;
+        border-radius: 7px;
+    }
+    #result{
+        font-size: bold;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item">
+            <h1>Reverse String</h1>
+            <input type="text" id="str" placeholder="Enter a string">
+            <button id="output" onclick="submit()">submit</button>
+            <p id="result"></p>
+        </div> 
+    </div>
+    
+    <script>
+        function submit() {
+            // Get the value from the input field
+            var inputString = document.getElementById("str").value;
+            
+            // Reverse the string
+            var reversedString = inputString.split('').reverse().join('');
+            
+            // Display the reversed string in the result paragraph
+            document.getElementById("result").innerText = reversedString;
+        }
+    </script>
+</body>
+</html>
